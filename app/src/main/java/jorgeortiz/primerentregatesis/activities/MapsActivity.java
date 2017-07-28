@@ -111,7 +111,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng actual = new LatLng(loc.getLatitude(), loc.getLongitude());
         //mMap.addMarker(new MarkerOptions().position(actual).title("Ubicacion Actual " + i));
         //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actual, 15));
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(actual, 20);
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(actual, 15);
         mMap.animateCamera(cameraUpdate);
         mMap.addMarker(new MarkerOptions().position(actual).title("UbicacionActual"));
         //mMap.getUiSettings().setZoomControlsEnabled(false);

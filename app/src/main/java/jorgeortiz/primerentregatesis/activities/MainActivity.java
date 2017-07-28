@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import jorgeortiz.primerentregatesis.R;
 import jorgeortiz.primerentregatesis.fragments.CardsFrament;
+import jorgeortiz.primerentregatesis.fragments.MatchFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -130,8 +131,8 @@ public class MainActivity extends AppCompatActivity
             f = new CardsFrament();
             lanzarFragment = true;
         } else if (id == R.id.nav_like) {
-            /*f = new MatchFragment();
-            lanzarFragment = true;*/
+            f = new MatchFragment();
+            lanzarFragment = true;
         } else if (id == R.id.nav_mapa) {
             // Nuevo Activity con Google Maps
             Intent i = new Intent(this, MapsActivity.class);
